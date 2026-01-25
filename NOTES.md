@@ -5,3 +5,5 @@
 - look at IAM Access Analyzer API
 - cloudtrail event format: eventName = the action
 - userIdentity.arn = who did it
+- need to handle assumed roles vs users
+- sts:AssumeRole changes the principal arn format
