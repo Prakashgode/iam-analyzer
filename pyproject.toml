@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iam-least-privilege-analyzer"
+version = "0.1.0"
+description = "Generate tighter IAM policies from CloudTrail activity and compare them against existing access."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Prakash Gode" }]
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4",
+  "ruff>=0.13.0",
+]
+
+[project.scripts]
+iam-lpa = "iam_lpa.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
