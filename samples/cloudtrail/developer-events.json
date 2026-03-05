@@ -1,0 +1,113 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-03-18T11:01:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAXAMPLE:alice",
+        "arn": "arn:aws:sts::123456789012:assumed-role/AppDeveloperRole/alice",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAXAMPLE",
+            "arn": "arn:aws:iam::123456789012:role/AppDeveloperRole",
+            "userName": "AppDeveloperRole"
+          }
+        }
+      },
+      "resources": [
+        {
+          "ARN": "arn:aws:s3:::company-artifacts/build.zip"
+        }
+      ]
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-03-18T11:02:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAXAMPLE:alice",
+        "arn": "arn:aws:sts::123456789012:assumed-role/AppDeveloperRole/alice",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAXAMPLE",
+            "arn": "arn:aws:iam::123456789012:role/AppDeveloperRole",
+            "userName": "AppDeveloperRole"
+          }
+        }
+      },
+      "resources": [
+        {
+          "ARN": "arn:aws:s3:::company-artifacts/build.zip"
+        }
+      ]
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-03-18T11:04:00Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAXAMPLE:alice",
+        "arn": "arn:aws:sts::123456789012:assumed-role/AppDeveloperRole/alice",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAXAMPLE",
+            "arn": "arn:aws:iam::123456789012:role/AppDeveloperRole",
+            "userName": "AppDeveloperRole"
+          }
+        }
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-03-18T11:05:00Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "PassRole",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAXAMPLE:alice",
+        "arn": "arn:aws:sts::123456789012:assumed-role/AppDeveloperRole/alice",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAXAMPLE",
+            "arn": "arn:aws:iam::123456789012:role/AppDeveloperRole",
+            "userName": "AppDeveloperRole"
+          }
+        }
+      },
+      "resources": [
+        {
+          "ARN": "arn:aws:iam::123456789012:role/EcsTaskExecutionRole"
+        }
+      ]
+    },
+    {
+      "eventVersion": "1.08",
+      "eventTime": "2026-03-18T11:06:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "DeleteObject",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLE:bob",
+        "arn": "arn:aws:iam::123456789012:user/bob",
+        "userName": "bob"
+      }
+    }
+  ]
+}
+
