@@ -7,3 +7,5 @@
 - userIdentity.arn = who did it
 - need to handle assumed roles vs users
 - sts:AssumeRole changes the principal arn format
+
+- handle service-linked roles separately
